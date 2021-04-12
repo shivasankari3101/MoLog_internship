@@ -4,21 +4,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinterest-sample</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./landing_page.css">
 </head>
 <body>
+    <div class="navbar">
+        <i class="fa fa-pinterest" aria-hidden="true"></i>
+        <div class="menu">
+            <a href="#">About us</a>
+            <button>Browse</button>
+        </div>
+    </div>
     <div class="home">
         <div class="home_bg">
-            <div class="bg_black"></div>
+            <div class="bg_black" data-aos="fade-right"  data-aos-delay="50"></div>
             <div class="bg_white"></div>
         </div>
-        <div class="main_content">
+        <div class="main_content"  data-aos="fade-left"  data-aos-delay="200">
             <div class="overlay"></div>
         </div>
-        <div class="text_content">
+        <div class="text_content" data-aos="zoom-in"  data-aos-delay="350">
             <h1>VISUAL DISCOVERY TOOL FOR AMAZING IDEAS</h1>
             <button>Learn more</button>
         </div>
     </div>
+
+    <div class="about">
+        <div class="about_pic">
+            <div class="about_div">
+                <div class="about_bg" data-aos="slide-up" data-aos-delay="50" data-aos-duration="500" ></div>
+                <img src="./images/image_1.jpg" class="about_img" data-aos="slide-up" data-aos-delay="500" data-aos-duration="500">
+            </div>
+        </div>
+        <div class="about_text" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="700">
+            <h1>What is Pinterest?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero labore quis illum id quibusdam incidunt. Incidunt atque laboriosam magnam excepturi facilis ea eaque veniam delectus, voluptas distinctio? Expedita, nam earum.</p>
+        </div>
+    </div>
+
+    <div class="instructions">
+        <div class="card" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="700">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <h3>Browse your home feed</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam voluptatem omnis minus illo itaque totam sapiente accusantium doloribus corrupti</p>
+        </div>
+
+        <div class="card" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="700">
+            <i class="fa fa-bookmark" aria-hidden="true"></i>
+            <h3>Save, try and share Pins</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam voluptatem omnis minus illo itaque totam sapiente accusantium doloribus corrupti</p>
+        </div>
+
+        <div class="card" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="700">
+            <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+            <h3>Create Pins</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam voluptatem omnis minus illo itaque totam sapiente accusantium doloribus corrupti</p>
+        </div>
+
+        <div class="card" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="700">
+            <i class="fa fa-address-card-o" aria-hidden="true"></i>
+            <h3>Create boards</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam voluptatem omnis minus illo itaque totam sapiente accusantium doloribus corrupti</p>
+        </div>
+    </div>
+
+    <div class="image_grid">
+        <div class="grid">
+          <div class="grid_container">
+              <div class="column1">
+                  <img src="images/image_1.jpg" alt="" srcset="">
+                  <img src="images/home_pic.jpg" alt="" srcset="">
+              </div>
+              <div class="column2">
+                <img src="images/home_pic.jpg" alt="" srcset="">
+                <img src="images/image_1.jpg" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+        <div class="grid_text">
+            <h1>Find amazing ideas for your work !!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, accusantium eius itaque neque maiores dolor quae vero veritatis totam facere, debitis ducimus consequatur quod ratione alias distinctio illo nemo! Eaque!</p>
+            <button>Browse</button>
+        </div>
+    </div>
+  
+
+    <div class="footer">
+        <div class="form">
+           <h3>Contact us</h3>
+           <input type="text" placeholder="Email"><br><br>
+           <input type="text" placeholder="Send us your message"><br><br>
+           <button>Submit</button>
+        </div>
+        <div class="about_us">
+           <h3>About us</h3>
+           <ul>
+            <li><a href="#">What's Pinterest</a></li>
+            <li><a href="#"> Pinterest page</a></li>
+            <li><a href="#">Engineering blog</a></li>
+            <li><a href="#">Guidelines</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Pinterest Labs</a></li>            
+           </ul>
+        </div>
+        <div class="policies">
+            <h3>Our policies</h3>
+            <ul>
+            <li><a href="#">Copyright & trademark</a></li>
+            <li><a href="#">Personalized ads</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy & cookies</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
